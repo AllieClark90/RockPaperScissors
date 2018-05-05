@@ -1,0 +1,63 @@
+<!--doctype html-->
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Rock, Paper, Scissors</title>
+</head>
+
+<body>
+  <script> 
+ function play(){
+ 
+ var userChoice = prompt('Choose ROCK, PAPER, or SCISSORS');
+  	var computerChoice = Math.random();
+  	if (computerChoice < 0.34){
+  		computerChoice = 'ROCK';
+  	}
+  	else if (computerChoice <= 0.67){
+  		computerChoice = 'PAPER';
+  	}
+  	else{
+  		computerChoice = 'SCISSORS';
+  	}
+  	var compare = function(choice1, choice2){
+  		if (choice1 === choice2){
+  			return "It's a tie!";
+  		}
+  		if (choice1 === 'ROCK'){
+  			if (choice2 === 'SCISSORS'){
+  				return "ROCK WINS!";
+  			}
+  			else {
+  				return "PAPER WINS!";
+  			}
+  		}
+  		if (choice1 === 'PAPER'){
+  			if (choice2 === 'ROCK'){
+  				return "PAPER WINS!";
+  			if (choice2 === 'SCISSORS'){
+  				return "SCISSORS WINS!";
+  			}
+  			}
+  			if (choice1 === 'SCISSORS'){
+  				if (choice2 === 'ROCK'){
+  					return "ROCK WINS!";
+  				}
+  				else{
+  					return "SCISSORS WINS!";
+  				}
+  			}
+  }		
+ console.log(game);
+
+  	
+
+  	
+
+
+
+
+  </script>
+</body>
+</html>
