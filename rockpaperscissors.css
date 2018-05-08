@@ -1,21 +1,27 @@
 h1{
 	font-family: Helvetica;
 	font-style: italic;
-	color: red;
+	color: white;
 	margin-top: 50px;
 	font-size: 50px;
 }
 body {
+	background-image: url("https://images.unsplash.com/photo-1485724745104-ae0f55940bc1?ixlib=rb-0.3.5&s=bef885291a66de7a37bfea7af4aab49b&auto=format&fit=crop&w=1314&q=80");
 	background-color: black;
 	color: white;
 	font-family: Helvetica;
 	font-size:20px;
+	font-weight: bold, outline;
 
 }
 .container {
   width: 75%;
   margin: 0 auto;
   text-align: center;
+}
+.border {
+	background: none;
+	padding: 10px;
 }
 button:hover {
   background-color: silver;
