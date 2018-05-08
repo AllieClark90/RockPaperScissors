@@ -3,61 +3,37 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1">
   <title>Rock, Paper, Scissors</title>
+  <link rel = "stylesheet" href = "rockpaperscissors.css"> 
 </head>
-
 <body>
-  <script> 
- function play(){
- 
- var userChoice = prompt('Choose ROCK, PAPER, or SCISSORS');
-  	var computerChoice = Math.random();
-  	if (computerChoice < 0.34){
-  		computerChoice = 'ROCK';
-  	}
-  	else if (computerChoice <= 0.67){
-  		computerChoice = 'PAPER';
-  	}
-  	else{
-  		computerChoice = 'SCISSORS';
-  	}
-  	var compare = function(choice1, choice2){
-  		if (choice1 === choice2){
-  			return "It's a tie!";
-  		}
-  		if (choice1 === 'ROCK'){
-  			if (choice2 === 'SCISSORS'){
-  				return "ROCK WINS!";
-  			}
-  			else {
-  				return "PAPER WINS!";
-  			}
-  		}
-  		if (choice1 === 'PAPER'){
-  			if (choice2 === 'ROCK'){
-  				return "PAPER WINS!";
-  			if (choice2 === 'SCISSORS'){
-  				return "SCISSORS WINS!";
-  			}
-  			}
-  			if (choice1 === 'SCISSORS'){
-  				if (choice2 === 'ROCK'){
-  					return "ROCK WINS!";
-  				}
-  				else{
-  					return "SCISSORS WINS!";
-  				}
-  			}
-  }		
- console.log(game);
+<div class = "container">
 
-  	
-
-  	
+  <h1> Rock, Paper, Scissors!</h1>
+  <p> Choose Rock, Paper, or Scissors to play. </p>
+  <p> 
+    Your Score: 
+    <span id= "player-score">0</span>
+  </p>
+  <p>
+    Computer Score: 
+    <span id = "computer-score">0</span>
+  </p>
+  <br></br>
+<button>
+  <img id = "rock" src= "https://i.imgur.com/7Ou0WD3.png" alt = "rock">
+  </button>
+<button>
+  <img id = "paper" src = "https://i.imgur.com/eWnocSm.png" alt = "paper">
+  </button>
+<button>
+  <img id = "scissors" src = "https://i.imgur.com/TyZ5sN6.png" alt = "scissors">
+  </button>
+<div></div>
+</div>
 
 
-
-
-  </script>
+<script src = "rockpaperscissors.js"></script>
 </body>
 </html>
